@@ -1,14 +1,6 @@
 MNIST Digit Classifier (Flask + TensorFlow)
 This is a simple web application built using Flask and TensorFlow that allows users to upload an image of a handwritten digit (0–9), and the model predicts the digit using a pre-trained Convolutional Neural Network (CNN) trained on the MNIST dataset.
 
-📁 Project Structure
-mnist_digit_classifier/
-├── app.py
-├── model.hdf5
-├── templates/
-│   ├── index.html
-│   └── result.html
-
 *** 🧠 Features  ***
 Upload an image containing a handwritten digit
 
