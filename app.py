@@ -23,12 +23,17 @@ def index():
     return render_template('index.html')
 
 def prepare_image(image):
+    if image.mode != 'RGB' and image.mode != 'L':
+         image = image.convert('RGB')
     image = ImageOps.grayscale(image)
     image = ImageOps.invert(image)
+    image = ImageOps.autocontrast(image)
     image = image.resize((28,28))
     image = np.array(image)/255
     image = image.reshape(1,28,28,1)
     return image
 
+
 if __name__ == '__main__':
     app.run(debug=True,use_reloader = False)
+
