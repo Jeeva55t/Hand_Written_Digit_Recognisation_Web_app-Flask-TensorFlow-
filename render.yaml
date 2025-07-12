@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: handwritten-digit-classifier
+    env: python
+    runtime: python-3.10
+    buildCommand: pip install --no-cache-dir -r requirements.txt
+    startCommand: python app.py
