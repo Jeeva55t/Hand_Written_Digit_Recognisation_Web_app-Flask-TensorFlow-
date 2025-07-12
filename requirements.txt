@@ -1,2 +1,4 @@
 flask
-tensorflow
+tensorflow==2.13
+pillow
+numpy
